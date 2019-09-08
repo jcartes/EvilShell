@@ -21,10 +21,10 @@ Pour que la victime ne soupçonne pas qu'il y a un Reverse_TCP sur son ordinateu
 
 Tout d'abord, assurez-vous d'avoir édité le fichier "client.py" en changeant le port (int) et l'adresse (str) que vous voulez utiliser. Ensuite installez **PyInstaller** à l'aide de la commande :
 
- python3 -m pip install pyinstaller
+	python3 -m pip install pyinstaller
  
 Ensuite, pour diffuser le programme, tapez :
 
- pyinstaller -w -F -specpath playloads client.py
+	pyinstaller -w -F -specpath playloads client.py
  
 L'option -w permet le camouflage de la console au démarrage. L'option -F permet d'obtenir un unique fichier, ce quie est plus facile pour ça propagation.
