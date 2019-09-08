@@ -1,4 +1,4 @@
-![img](https://img.shields.io/badge/EvilShell-v.01-red) 
+![img](https://img.shields.io/badge/EvilShell-v0.1.5-redd) 
 ![img](https://img.shields.io/badge/Python-3.x-blue)
 # EvilShell
 
