@@ -2,8 +2,8 @@ import os
 import socket
 import subprocess
 
-host = '192.168.0.5'
-port = 443
+host = 'your_ip'
+port = 'your_port'
 
 s = socket.socket()
 c_values = (host, int(port))
