@@ -1,5 +1,10 @@
 # EvilShell
-EvilShell est un Reverse_TCP développé en Python. Il utilise les modules os, socket, subprocess.
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/3?color=f&label=python&style=flat-square)
+
+EvilShell est un Reverse_TCP développé en Python 3. Il utilise les modules os, socket, subprocess.
+
+# Qu'est-ce qu'un  
 
 # Capture d'écran
  ![img](https://www.zupimages.net/up/19/36/5617.png) 
