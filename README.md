@@ -2,7 +2,7 @@
 ![img](https://img.shields.io/badge/Python-3.x-blue)
 # EvilShell
 
-EvilShell est un Reverse_TCP développé en Python 3. Il utilise les modules os, socket, subprocess.
+EvilShell est un Reverse_TCP développé en Python 3. Il utilise les modules **os, socket, subprocess**.
 
 # Qu'est-ce qu'un Reverse_TCP ?
 Le reverse shell (shell inversé) - appelé aussi reverse tunnel (tunnel inversé) - est une technique informatique qui permet de rediriger sur un ordinateur local l'entrée et la sortie d'un shell vers un ordinateur distant, au travers d'un service capable d'interagir entre les deux ordinateurs.
