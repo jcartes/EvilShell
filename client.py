@@ -3,7 +3,7 @@ import socket
 import subprocess
 
 host = 'your_ip'
-port = 'your_port'
+port = 'your_port (int type)'
 
 s = socket.socket()
 c_values = (host, int(port))
