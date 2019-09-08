@@ -10,6 +10,7 @@ Le reverse shell (shell inversé) - appelé aussi reverse tunnel (tunnel invers�
 *Source: Wikipédia*
 
 ![img](https://www.0x0ff.info/wp-content/uploads/2013/08/reverse_shell.png)
+
 *Source: https://www.0x0ff.info/2013/reverse-shell*
 
 # Capture d'écran
