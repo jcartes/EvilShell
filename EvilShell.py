@@ -1,6 +1,7 @@
 # coding: utf-8
 #!/usr/bin/python3
 
+from termcolor import colored
 import socket
 import sys
 import os
@@ -16,11 +17,16 @@ banner = """
 ░░ ▒░ ░  ░ ▐░  ░▓  ░ ▒░▓  ░   ▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒░░ ▒░ ░░ ▒░▓  ░░ ▒░▓  ░
  ░ ░  ░  ░ ░░   ▒ ░░ ░ ▒  ░   ░ ░▒  ░ ░ ▒ ░▒░ ░ ░ ░  ░░ ░ ▒  ░░ ░ ▒  ░
    ░       ░░   ▒ ░  ░ ░      ░  ░  ░   ░  ░░ ░   ░     ░ ░     ░ ░   
-   ░  ░     ░   ░      ░  ░         ░   ░  ░  ░   ░  ░    ░  ░    ░  ░
-                                                                                        
+   ░  ░     ░   ░      ░  ░         ░   ░  ░  ░   ░  ░    ░  ░    ░  ░ 
+
+Noctis_Atrae, v0.1                                                                                
 """
 
-print(banner)
+critcal_msg = colored("[!CRITICAL!]", "red", attrs=['reverse', 'blink'])
+info_msg = colored("[?INFO?]", "green", attrs=['blink'])
+
+text = colored(banner, 'red', attrs=['blink'])
+print(text)
 
 # Creation du Socket
 def socket_create():
@@ -30,15 +36,15 @@ def socket_create():
 		global bind_values
 		global s
 
-		host = input(str("Adresse du serveur : "))
-		port = input("Port du serveur : ")
+		host = input("Adresse du serveur:")
+		port = input("Port du serveur: ")
 
 		bind_values = (host, int(port))
 
 		s = socket.socket()
 
 	except socket.error as msg:
-		print("[!CRITICAL!]: La création du socket a échoué : " + str(msg))
+		print(critcal_msg + " La création du socket a échoué : " + str(msg))
 
 # Socket Binding
 def socket_bind():
@@ -48,12 +54,12 @@ def socket_bind():
 		global bind_values
 		global s
 
-		print("Le serveur écoute à l'adresse " + str(host) + ":" + str(port))
+		print(info_msg + " Le serveur écoute à l'adresse " + str(host) + ":" + str(port))
 		s.bind((bind_values))
 		s.listen(5)
 
 	except socket.error as msg:
-		print("[!CRITICAL!]: Le serveur a rencontré une erreur lors de l'écoute !" + str(msg) + "\n" + "On recommence !")
+		print(critcal_msg + " Le serveur a rencontré une erreur lors de l'écoute !" + str(msg) + "\n" + "On recommence !")
 		socket_bind()
 
 # Connexion au client 
