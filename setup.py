@@ -26,5 +26,7 @@ while True:
   choix = input("Êtes-vous d'accord (O/n) ?: ")
   if choix == "O" or "o":
     os.system("python3 -m pip install termcolor")
-  elif choix == "N" or "n":
+    break
+    sys.exit("Au Revoir !")
+  elif choix == "n":
     sys.exit("OK ! Au revoir !")
